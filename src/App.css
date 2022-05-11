@@ -1,0 +1,20 @@
+.App{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.div_pes{
+  background-color: #006400;
+  width: 100%;
+  max-height: 50px;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+.div_pes h1{
+  padding: 0px 0px 2px;
+  font-size: 25px;
+  margin-bottom: 4px;
+  margin-top: 12px;
+}

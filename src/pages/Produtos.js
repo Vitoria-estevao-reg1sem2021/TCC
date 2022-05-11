@@ -1,10 +1,8 @@
 import React from "react";
-import './App.css' 
-// import Primeiro from './Componentes/Primeiro'
-import Parametro from './pages/Parametro'
-// import ComFilhos from "./Componentes/ComFilhos"
-import Card from './pages/Card'
-// import Repeticao from './Componentes/Repeticao'
+import '../App.css' 
+import Card from "./Card";
+import Parametro from "./Parametro";
+
 
 export default (props) => (
 <>

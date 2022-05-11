@@ -1,5 +1,5 @@
 import React from "react";
-import '../layouts/Card.css'
+import '../layout/Card.css'
 
 export default props =>
 <div className="Card">
