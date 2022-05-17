@@ -1,6 +1,7 @@
 import {useParams} from 'react-router-dom'
 import React, {useState, useReducer, useEffect} from 'react'
 import myaxios from './Myaxios'
+import '../layout/CadasProd.css'
 
 const formReducer = (state, action) => {
   switch(action.type){
@@ -65,6 +66,7 @@ const CadastroProd = () => {
       }
     }
 
+    const [endImg, setEndImg] = useState('');
     return (
         <div className="container">
             <form>
@@ -91,6 +93,7 @@ const CadastroProd = () => {
                   <input type="file" onChange={handleImageChange}
                     className="form-control" name="imagem" id="imagem" aria-describedby="helpId" placeholder=""
                      />
+                  {file ? "": <img src='./img_upload.jpg' width={200} height={200} /> }
                   <small id="helpId" className="form-text text-muted">Coloque a Imagem do seu produto</small>
                 </div>
                <button type="submit" onClick={submitForm} className="btn btn-primary">Enviar</button> 

@@ -8,8 +8,9 @@ import CadastroProd from "./pages/CadastroProd";
 export default (props) => (
 <>
     <Routes>
-        <Route index element={<Produtos />}/>
-        <Route path="/products" element={<CadastroProd />}/>
+        {/* <Route index element={<Produtos />}/>
+        <Route path="/products" element={<CadastroProd />}/> */}
+        <Route index element={<CadastroProd />}/>
     </Routes>
 </>
     );
