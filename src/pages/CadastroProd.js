@@ -66,7 +66,12 @@ const CadastroProd = () => {
       }
     }
 
-    const [endImg, setEndImg] = useState('');
+//     let photo = document.getElementById('imgPhoto');
+// let fileimg = document.getElementById('image');
+
+// photo.addEventListener('click', () => {
+//     image.click();
+// });
     return (
         <div className="container">
             <form>
@@ -90,10 +95,13 @@ const CadastroProd = () => {
                 </div>
                 <div className="form-group">
                   <label for="imagem">Imagem</label>
+                  <div class="imageContainer">
+                <img src="img_upload.jpg" id="imgPhoto"/>
+                </div>
                   <input type="file" onChange={handleImageChange}
                     className="form-control" name="imagem" id="imagem" aria-describedby="helpId" placeholder=""
                      />
-                  {file ? "": <img src='./img_upload.jpg' width={200} height={200} /> }
+                  {/* {file ? "": <img src='./img_upload.jpg' width={200} height={200} /> } */}
                   <small id="helpId" className="form-text text-muted">Coloque a Imagem do seu produto</small>
                 </div>
                <button type="submit" onClick={submitForm} className="btn btn-primary">Enviar</button> 

@@ -7,6 +7,11 @@ import Parametro from "./Parametro";
 export default (props) => (
 <>
 <div className="div_pes">
+{/* <SearchBar
+    placeholder="Type Here..."
+    onChangeText={this.updateSearch}
+    value={search}
+/> */}
     <h1> PRODUTOS </h1>
 </div>
 <div className="App">
